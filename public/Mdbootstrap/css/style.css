@@ -1,0 +1,62 @@
+/* Required for full background image */
+
+/* -----  Page Homepage ------*/
+html,
+body,
+header,
+.view {
+    height: 100%;
+}
+
+@media (max-width: 740px) {
+    html,
+    body,
+    header,
+    .jarallax {
+        height: 1000px;
+    }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+    html,
+    body,
+    header,
+    .jarallax {
+        height: 600px;
+    }
+}
+
+.top-nav-collapse {
+    background: #ED213A; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5252, #ff1744); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5252, #ff1744); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+
+.navbar:not(.top-nav-collapse) {
+    background: #ED213A; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5252, #ff1744); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5252, #ff1744); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media (max-width: 991px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #ED213A; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #ff5252, #ff1744); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #ff5252, #ff1744); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+}
+
+.gradient{
+    background: #ED213A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5252, #ff1744);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5252, #ff1744); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* -----  Page Homepage ------*/
+
+/* -----  Page Projects ------*/
+
+
+/* -----  Page Projects ------*/
