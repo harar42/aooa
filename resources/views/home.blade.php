@@ -50,36 +50,6 @@
                 </div>
 
             </div>
-            <!-- Card -->
-            {{--<!-- Card -->--}}
-            {{--<div class="card">--}}
-
-                {{--<!-- Card image -->--}}
-                {{--<div class="view overlay">--}}
-                    {{--<img class="card-img-top" src="{{ asset('images/partners/'.$partner->image) }}" alt="Card image cap" style="height: 235px;">--}}
-                    {{--<a>--}}
-                        {{--<div class="mask rgba-white-slight"></div>--}}
-                    {{--</a>--}}
-                {{--</div>--}}
-                {{--<!-- Card content -->--}}
-                {{--<div class="card-body">--}}
-
-                    {{--<!-- Title -->--}}
-                    {{--<h4 class="card-title"><strong>{{ $partner->nom }}</strong></h4>--}}
-                    {{--<hr>--}}
-                    {{--<!-- Text -->--}}
-                    {{--<p class="card-text">{{ $partner->description }}</p>--}}
-
-                {{--</div>--}}
-
-                {{--<!-- Card footer -->--}}
-                {{--<div class="rounded-bottom mdb-color  text-center p-3">--}}
-                    {{--<a href="{{route('partners.show',['id' => $partner->id ])}}" class="btn btn-danger"><i class="fas fa-clone left"></i> Voir les deals</a>--}}
-
-                {{--</div>--}}
-
-            {{--</div>--}}
-            {{--<!-- Card -->--}}
         </div>
     @endforeach
 

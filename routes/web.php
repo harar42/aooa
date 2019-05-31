@@ -11,11 +11,13 @@
 |
 */
 
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@welcome')->name('welcome');
+Route::POST('/message', 'HomeController@mail')->name('message');
+
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/welcome', 'HomeController@index')->name('home');
 
 Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard')->middleware('isadmin');
 

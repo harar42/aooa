@@ -20,12 +20,13 @@
 <body>
 <div id="app">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark " style="height: 75px">
+    <nav class="navbar navbar-expand-lg navbar-dark primary-color" style="height: 75px">
         <div class="container">
 
             <!-- Brand -->
             <a class="navbar-brand" href="/">
-                <strong>AOOA</strong>
+                <img class="mr-5" src="{{ asset('images/homepage/hoowa-logo.png') }}" width="200" style="display: inline-block">
+
             </a>
 
             <!-- Collapse -->
@@ -39,11 +40,11 @@
 
                 <!-- Left -->
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">ACCEUIL
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
+                    {{--<li class="nav-item active">--}}
+                        {{--<a class="nav-link" href="/">ACCEUIL--}}
+                            {{--<span class="sr-only">(current)</span>--}}
+                        {{--</a>--}}
+                    {{--</li>--}}
                     @if(Auth::check())
                         @if (Auth::user()->isAdmin())
                             <li class="nav-item active">
@@ -96,7 +97,7 @@
         @yield('content')
     </main>
     <!-- Footer -->
-    <footer class="page-footer font-small gradient darken-3">
+    <footer class="page-footer font-small primary-color darken-3">
 
         <!-- Footer Elements -->
         <div class="container">
@@ -144,7 +145,7 @@
 
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2019 Copyright :
-            <a href="https://mdbootstrap.com/education/bootstrap/"> AOOA.fr</a>
+            <a href="https://mdbootstrap.com/education/bootstrap/"> HOOWA.fr</a>
         </div>
         <!-- Copyright -->
 

@@ -14,6 +14,7 @@ class CategoriesTableSeeder extends Seeder
         DB::table('categories')->insert([
             ['nom' =>'Accessoires auto-moto'],
             ['nom' =>'Alimentation'],
+            ['nom' =>'Assurance'],
             ['nom' =>'Autres services'],
             ['nom' =>'Bien être'],
             ['nom' =>'Bon plans'],

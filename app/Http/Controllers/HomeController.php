@@ -3,8 +3,11 @@
 namespace App\Http\Controllers;
 use http\Params;
 use Illuminate\Support\Facades\DB;
-
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\SendMail;
+
+
 
 class HomeController extends Controller
 {
@@ -81,4 +84,34 @@ class HomeController extends Controller
 //        dd($datas);
         return view('pages.geolocation')->with('datas',$datas);
     }
+
+
+    public function welcome()
+    {
+        return view('welcome');
+    }
+
+
+    public function mail(Request $request)
+    {
+        $request->validate([
+            'nom'=>'required',
+            'email'=>'required',
+            'activity'=>'required',
+            'message'=>'required'
+        ]);
+
+        $phone = ($request->phone) ? $request->phone : '';
+        $activity = ($request->activity) ? $request->activity : '';
+        $data = array('nom' => $request->nom,
+            'email' => $request->email,
+            'activity' => $activity,
+            'phone' => $phone,
+            'message' => $request->message,
+        );
+
+        Mail::to('ararhaouas@yahoo.fr')->send(new SendMail($data));
+        return back()->with('success','Merci de nous avoir contacté');
+    }
+
 }

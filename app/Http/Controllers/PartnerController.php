@@ -73,6 +73,10 @@ class PartnerController extends Controller
             $location = public_path('images/partners/' . $filename);
             Image::make($image)->resize(400,400)->save($location);
         }
+        else
+        {
+                $filename = "http://lorempixel.com/400/400/";
+        }
         $partner = new Partner([
             'nom'=> $request->get('nom'),
             'description' => $request->get('description'),
