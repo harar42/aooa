@@ -88,7 +88,7 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg scrolling-navbar navbar-light z-depth-0 fixed-top white ml-md-4 mr-md-3 mb-5">
-        <a class="navbar-brand purple-pastel" href="#">
+        <a class="navbar-brand purple-pastel" href="">
             <img class="mr-5" src="{{ asset('images/homepage/hoowa-logo.png') }}" width="100" style="display: inline-block">
 
         </a>
@@ -267,11 +267,8 @@
 
                         <!-- Grid column -->
                         <div class="col-lg-10 col-md-9 col-10">
-                            <h4 class="font-weight-bold blue-pastel">Abattement fiscal</h4>
-                            <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-                                adipisci velit,
-                                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem,
-                                sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                            <h4 class="font-weight-bold blue-pastel">Émergence de projets</h4>
+                            <p class="grey-text">Possibilité de mettre en place une enveloppe participative via “Cotizup” ou plein d'autres plateformes collaboratives .</p>
                         </div>
                         <!-- Grid column -->
 
@@ -295,7 +292,7 @@
 
                         <!-- Grid column -->
                         <div class="col-lg-10 col-md-9 col-10">
-                            <h4 class="font-weight-bold green-pastel">We are children-friendly</h4>
+                            <h4 class="font-weight-bold green-pastel">Réseau d'entrepreneurs</h4>
                             <p class="grey-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
                                 praesentium
                                 voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate

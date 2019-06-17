@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-    <div class="container">
+    <div class="container mt-5">
         <form method="post" action="{{action('CategoryController@store')}}" enctype="multipart/form-data" class="border border-light p-5 md-form" >
             @csrf
 

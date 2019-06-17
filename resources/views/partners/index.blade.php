@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container-fluid mb-5 p-5">
+<div class="container-fluid mt-5 p-5">
     <h2 class="text-center mb-5 p-5 btn-large btn-outline-danger"> Liste des Partenaires </h2>
     <table id="dtMaterialDesignExample" class="table table-striped" cellspacing="0" width="100%">
         <thead>
