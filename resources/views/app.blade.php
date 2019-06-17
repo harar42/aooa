@@ -142,7 +142,7 @@
 
             window.navigator.geolocation.getCurrentPosition(function(position) {
                 var href = "\""+location.href+"/"+position.coords.latitude+"/"+position.coords.longitude+"\"";
-                $('#demo').attr("href", href);
+                $('#demo').attr("href", "ALLLLL");
             }, function(error) {
                 console.log("Erreur de géoloc N°"+error.code+" : "+error.message);
                 console.log(error);
