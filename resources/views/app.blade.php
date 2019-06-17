@@ -140,10 +140,8 @@
 
             console.log(location.href);
             window.navigator.geolocation.getCurrentPosition(function(position) {
-                var href = "https:/www.hoowa.fr/geolocation/"+position.coords.latitude+"/"+position.coords.longitude+"\"";
-                console.log(href);
 
-                $('#demo').attr("href", href);
+                $('#demo').attr("href", "https:/www.hoowa.fr/geolocation/"+position.coords.latitude+"/"+position.coords.longitude+"\"");
             }, function(error) {
                 console.log("Erreur de géoloc N°"+error.code+" : "+error.message);
                 console.log(error);
