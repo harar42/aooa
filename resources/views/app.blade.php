@@ -140,7 +140,7 @@
 
             console.log(location.href);
             window.navigator.geolocation.getCurrentPosition(function(position) {
-                var href = "\""+location.href+"/geolocation/"+position.coords.latitude+"/"+position.coords.longitude+"\"";
+                var href = "https:/www.hoowa.fr/geolocation/"+position.coords.latitude+"/"+position.coords.longitude+"\"";
                 console.log(href);
 
                 $('#demo').attr("href", href);
