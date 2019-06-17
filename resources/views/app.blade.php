@@ -138,7 +138,18 @@
     $(document).ready(function () {
         $('.mdb-select').materialSelect();
 
-        $('#demo').attr("href", "http://www.aooa.test/geolocation/42.5/2.3");
+        // function getMyPosition() {
+        //     console.log("Appel à getCurrentPosition()");
+
+            window.navigator.geolocation.getCurrentPosition(function(position) {
+                $('#demo').attr("href", "https://www.hoowa.fr/geolocation/"+position.coords.latitude+"/"+position.coords.longitude+"\"");
+            }, function(error) {
+                console.log("Erreur de géoloc N°"+error.code+" : "+error.message);
+                console.log(error);
+            });
+        // }
+
+
             // if (navigator.geolocation) { //check if geolocation is available
             //     navigator.geolocation.getCurrentPosition(function(position){
             //         console.log(position);
