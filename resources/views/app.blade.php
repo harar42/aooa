@@ -138,7 +138,6 @@
     $(document).ready(function () {
         $('.mdb-select').materialSelect();
 
-            console.log(location.href);
             window.navigator.geolocation.getCurrentPosition(function(position) {
                 $('#demo').attr("href", "https://www.hoowa.fr/geolocation/"+position.coords.latitude+"/"+position.coords.longitude+"\"");
             }, function(error) {
