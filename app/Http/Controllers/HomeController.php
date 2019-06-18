@@ -30,7 +30,7 @@ class HomeController extends Controller
     {
         $villes = ['PARIS','LYON','MARSEILLE','BORDEAUX','LILLE','NANTES'];
         $categories = DB::select('SELECT nom from categories limit 12');
-        $partners = DB::select("SELECT p.id,p.nom, p.description,p.image,c.nom,p.latitude,p.longitude as category FROM partners  p
+        $partners = DB::select("SELECT p.id,p.nom, p.description,p.image,p.latitude,p.longitude,c.nom as category FROM partners  p
                   join categories c  on p.category_id = c.id ");
 
         return view('home')->with(['partners' => $partners,'villes' => $villes,'categories' => $categories]);
@@ -76,7 +76,7 @@ class HomeController extends Controller
 
         $lat = $latitude;
         $lng = $longitude;
-        $string = "SELECT p.id,p.nom, p.description,p.image,c.nom,p.latitude,p.longitude as category, ( 6371 * acos( cos( radians(?) ) * cos( radians( latitude ) ) * cos( radians( longitude ) - radians(?) ) + sin( radians(?) ) * sin( radians( latitude ) ) ) ) AS distance FROM partners  p
+        $string = "SELECT p.id,p.nom, p.description,p.image,p.latitude,p.longitude,c.nom as category, ( 6371 * acos( cos( radians(?) ) * cos( radians( latitude ) ) * cos( radians( longitude ) - radians(?) ) + sin( radians(?) ) * sin( radians( latitude ) ) ) ) AS distance FROM partners  p
                   join categories c  on p.category_id = c.id  HAVING distance < 50 ORDER BY distance LIMIT 0 , 20;";
         $args = [$latitude, $lng, $lat];
         $datas = DB::select($string, $args);
