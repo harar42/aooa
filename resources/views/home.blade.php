@@ -46,7 +46,7 @@
                         <h3 class="card-title pt-2"><strong>{{ $partner->nom }}</strong></h3>
                         <p>{{ $partner->description }}</p>
                                 <a href="{{route('partners.show',['id' => $partner->id ])}}" class="btn btn-sm btn-danger"><i class="fas fa-clone left"></i> Voir les deals</a>
-                                <a href="<?php echo "https://www.waze.com/ul?ll=".$partner->latitude."%2C".$partner->latitude."&navigate=yes&zoom=17" ?>" class="btn btn-sm  btn-success"><i class="fas fa-car"></i> J'y vais</a>
+                                <a href="<?php echo "https://www.google.com/maps/dir/?api=1&destination=".$partner->latitude.",".$partner->latitude ?>" class="btn btn-sm  btn-success"><i class="fas fa-car"></i> J'y vais</a>
                     </div>
                 </div>
 
