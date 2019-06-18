@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="container p-3">
+    <div class="container p-3 mt-5">
         <div class="row">
             @if(Auth::check())
                 @if (Auth::user()->isAdmin())

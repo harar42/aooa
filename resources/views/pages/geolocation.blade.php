@@ -19,6 +19,8 @@
                                 <h3 class="card-title pt-2"><strong>{{ $item->nom }}</strong></h3>
                                 <p>{{ $item->description }}</p>
                                 <a href="{{route('partners.show',['id' => $item->id ])}}" class="btn btn-danger"><i class="fas fa-clone left"></i> Voir les deals</a>
+                                <a href="<?php echo "https://www.waze.com/ul?ll=".$item->latitude."%2C".$item->latitude."&navigate=yes&zoom=17" ?>" class="btn btn-sm  btn-success"><i class="fas fa-car"></i> J'y vais</a>
+
                             </div>
                         </div>
 
