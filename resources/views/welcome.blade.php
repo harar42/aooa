@@ -100,7 +100,7 @@
             <ul class="navbar-nav ml-auto text-uppercase smooth-scroll">
                 <li class="nav-item">
                     <a class="nav-link heather-color" href="#about" data-offset="100">
-                        <strong>Acceuil</strong>
+                        <strong>Accueil</strong>
                     </a>
                 </li>
                 <li class="nav-item">
