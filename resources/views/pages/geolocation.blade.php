@@ -19,7 +19,7 @@
                                 <h3 class="card-title pt-2"><strong>{{ $item->nom }}</strong></h3>
                                 <p>{{ $item->description }}</p>
                                 <a href="{{route('partners.show',['id' => $item->id ])}}" class="btn btn-danger"><i class="fas fa-clone left"></i> Voir les deals</a>
-                                <a href="<?php echo "https://www.google.com/maps/dir/?api=1&destination=".$item->latitude.",".$item->latitude ?>" ?>" class="btn btn-sm  btn-success"><i class="fas fa-car"></i> J'y vais</a>
+                                <a href="<?php echo "https://www.google.com/maps/dir/?api=1&destination=".$item->latitude.",".$item->longitude ?>"  class="btn btn-sm  btn-success"><i class="fas fa-car"></i> J'y vais</a>
 
                             </div>
                         </div>
