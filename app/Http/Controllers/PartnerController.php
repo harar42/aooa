@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Deal;
 use App\Partner;
+use App\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Intervention\Image\Facades\Image;
@@ -42,7 +43,9 @@ class PartnerController extends Controller
      */
     public function create()
     {
-        return view('partners.create');
+        $categories =  Category::all();
+//        dd($categories);
+        return view('partners.create')->with('categories', $categories);
     }
 
     /**
@@ -118,9 +121,10 @@ class PartnerController extends Controller
     public function edit($id)
     {
         $partner = Partner::find($id);
+        $categories =  Category::all();
 
 //        dd($partner);
-        return view('partners.edit', compact('partner'));
+        return view('partners.edit')->with(['partner' => $partner,'categories' =>  $categories]);
     }
 
     /**
@@ -138,8 +142,8 @@ class PartnerController extends Controller
             'adresse'=>'required',
             'ville'=>'required',
             'code_postal'=>'required',
-            'latitude'=>'required|integer',
-            'longitude'=> 'required|integer',
+            'latitude'=>'required|string',
+            'longitude'=> 'required|string',
             'category_id' => 'required|integer'
         ]);
         if($request->hasFile('image'))
@@ -148,6 +152,9 @@ class PartnerController extends Controller
             $filename = time() . '.' .$image->getClientOriginalExtension();
             $location = public_path('images/partners/' . $filename);
             Image::make($image)->resize(400,400)->save($location);
+        }
+        else {
+            $filename = $request->get('image');
         }
 
         $partner = Partner::find($id);

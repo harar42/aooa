@@ -14,8 +14,9 @@
     <link href="{{ asset('/Mdbootstrap/css/mdb.min.css') }}" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     {{--<link href="{{ asset('/Mdbootstrap/css/style.css') }}" rel="stylesheet">--}}
+    {{--<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">--}}
 
-    {{--<link rel="shortcut icon" type="image/png" href="{{ asset('images/favicon.ico') }}" />--}}
+    <link rel="shortcut icon" type="image/png" href="{{ asset('images/homepage/favicon-96x96.png') }}" />
     <title>HOOWA</title>
 
 </head>
@@ -106,6 +107,11 @@
                 <li class="nav-item">
                     <a class="nav-link heather-color" href="#avantages" data-offset="100">
                         <strong>Avantages</strong>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link heather-color" href="#deals" data-offset="100">
+                        <strong>Deals</strong>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -214,9 +220,21 @@
 
             <!-- Section heading -->
             <h2 class="h1-responsive font-weight-bold text-center">Pourquoi HOOWA</h2>
-            <hr class="hr-pink my-3">
-            <p class="lead grey-text text-center w-responsive mx-auto mb-5 pb-3">HOOWA offre à ses utilisateurs une pléthore d'avantages.
-                Que ce soit pour les partenaires,commercants,artisans ou les adhérents, tout le monde en profite</p>
+            <hr class="hr-pink my-4">
+            <p class="lead grey-text text-center w-responsive mx-auto ">
+                Hoowa est un concept innovant autour d’une économie solidaire et sociale.
+               La plateforme Hoowa permet à toute personne physique ou morale commerçante ou non d’accéder à des services divers où chacun trouve un intérêt
+                Hoowa crée un réseau de partenariats entre commerçants et adhérents à travers sa plateforme qui poursuit plusieurs objectifs.</p>
+
+
+            <p class="lead grey-text text-center w-responsive mx-auto ">
+                D’une part, tout d’abord, celui de faire profiter toute personne à la recherche d’économies et qui désire bénéficier d’offres promotionnelles notamment.
+                Ensuite, la plateforme de partage permet aux professionnels commerçants de faire la promotion de leurs produits et services.
+            </p>
+
+            <p class="lead grey-text text-center w-responsive mx-auto mb-5 pb-3">
+                Ainsi, la plateforme Hoowa proposera des partenariats divers, de toute nature, des offres promotionnelles, des bons d’achat, etc...
+            </p>
 
             <h2 class="h1-responsive font-weight-bold text-center mt-5">Pour les partenaires</h2>
             <hr class="hr-pink my-3 mb-5">
@@ -225,25 +243,29 @@
             <div class="row mb-5">
 
                 <!-- Grid column -->
-                <div class="col-md-4 mb-md-0 mb-5">
+                <div class="col-md-6 mb-md-0 mb-5">
 
                     <!-- Grid row -->
                     <div class="row">
 
                         <!-- Grid column -->
                         <div class="col-lg-2 col-md-3 col-2">
-                            <i class="fas fa-wifi orange-pastel fa-2x"></i>
+                            {{--<i class="fas fa-wifi orange-pastel fa-2x"></i>--}}
+                            <i class="fas fa-map-marker-alt orange-pastel fa-2x"></i>
+
                         </div>
                         <!-- Grid column -->
 
                         <!-- Grid column -->
                         <div class="col-lg-10 col-md-9 col-10">
-                            <h4 class="font-weight-bold orange-pastel">Pub gratuite</h4>
-                            <p class="grey-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                doloremque laudantium,
-                                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
-                                sunt explicabo.
-                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                            <h4 class="font-weight-bold orange-pastel  mb-3">Pub gratuite</h4>
+                            <p class="grey-text">
+                                Les partenaires bénéficient de la plateforme Hoowa pour faire la promotion gratuite de leur entreprise.
+                                Ils pourront également profiter d’un système de géolocalisation et d’une meilleure visibilité de leur entreprise grâce à la plateforme Hoowa.
+                                Les partenaires professionnels qui auront adhéré au projet en réglant une cotisation, pourront obtenir de nombreux avantages en termes de promotion, et de financement participatif.
+                                Cependant, ils seront tenus d’assurer certaines contreparties.
+
+                            </p>
                         </div>
                         <!-- Grid column -->
 
@@ -254,21 +276,32 @@
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-md-4 mb-md-0 mb-5">
+                <div class="col-md-6 mb-md-0 mb-5">
 
                     <!-- Grid row -->
                     <div class="row">
 
                         <!-- Grid column -->
                         <div class="col-lg-2 col-md-3 col-2">
-                            <i class="fas fa-coffee blue-pastel fa-2x"></i>
+                            {{--<i class="fas fa-coffee blue-pastel fa-2x"></i>--}}
+                            <i class="fas fa-hand-holding-usd blue-pastel fa-2x"></i>
                         </div>
                         <!-- Grid column -->
 
                         <!-- Grid column -->
                         <div class="col-lg-10 col-md-9 col-10">
-                            <h4 class="font-weight-bold blue-pastel">Émergence de projets</h4>
-                            <p class="grey-text">Possibilité de mettre en place une enveloppe participative via “Cotizup” ou plein d'autres plateformes collaboratives .</p>
+                            <h4 class="font-weight-bold blue-pastel mb-3">Émergence de projets</h4>
+                            <p class="grey-text">
+                                Hoowa met en place sur sa plateforme un financement solidaire ouvert à toute entreprise nouvelle ou non qui aurait besoin de fonds.
+                                Une partie du financement participatif et solidaire sera prélevé directement sur les cotisations des adhérents et la générosité de tout ceux qui suivent de près ou de loin le concept Hoowa.
+
+
+                                L’objet de ce concept novateur est donc de toucher un grand nombre de personnes, particuliers ou professionnels, qui souhaitent faire la promotion de leurs produits et services mais également profiter des diverses promotions.
+                                {{--Ces avantages leur permettront, in fine, de faire des économies grâce à une réduction par exemple de leur budget marketing, d’avoir une nouvelle clientèle et donc une possibilité d’augmentation de leur chiffre d’affaires.--}}
+
+                                {{--De plus, les partenaires adhérents bénéficient d'un impacte direct sur les charges de l'entreprise.--}}
+
+                            </p>
                         </div>
                         <!-- Grid column -->
 
@@ -278,34 +311,34 @@
                 </div>
                 <!-- Grid column -->
 
-                <!-- Grid column -->
-                <div class="col-md-4">
+                {{--<!-- Grid column -->--}}
+                {{--<div class="col-md-4">--}}
 
-                    <!-- Grid row -->
-                    <div class="row">
+                    {{--<!-- Grid row -->--}}
+                    {{--<div class="row">--}}
 
-                        <!-- Grid column -->
-                        <div class="col-lg-2 col-md-3 col-2">
-                            <i class="far fa-grin-beam green-pastel fa-2x"></i>
-                        </div>
-                        <!-- Grid column -->
+                        {{--<!-- Grid column -->--}}
+                        {{--<div class="col-lg-2 col-md-3 col-2">--}}
+                            {{--<i class="far fa-grin-beam green-pastel fa-2x"></i>--}}
+                        {{--</div>--}}
+                        {{--<!-- Grid column -->--}}
 
-                        <!-- Grid column -->
-                        <div class="col-lg-10 col-md-9 col-10">
-                            <h4 class="font-weight-bold green-pastel">Réseau d'entrepreneurs</h4>
-                            <p class="grey-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                                praesentium
-                                voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
-                                non provident,
-                                similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-                        </div>
-                        <!-- Grid column -->
+                        {{--<!-- Grid column -->--}}
+                        {{--<div class="col-lg-10 col-md-9 col-10">--}}
+                            {{--<h4 class="font-weight-bold green-pastel">Réseau d'entrepreneurs</h4>--}}
+                            {{--<p class="grey-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis--}}
+                                {{--praesentium--}}
+                                {{--voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate--}}
+                                {{--non provident,--}}
+                                {{--similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>--}}
+                        {{--</div>--}}
+                        {{--<!-- Grid column -->--}}
 
-                    </div>
-                    <!-- Grid row -->
+                    {{--</div>--}}
+                    {{--<!-- Grid row -->--}}
 
-                </div>
-                <!-- Grid column -->
+                {{--</div>--}}
+                {{--<!-- Grid column -->--}}
 
             </div>
             <!-- Grid row -->
@@ -321,9 +354,10 @@
             <!-- Section heading -->
             <h2 class="h1-responsive font-weight-bold text-center">Pour les adhérents</h2>
             <hr class="hr-pink my-3">
-            <p class="lead grey-text text-center w-responsive mx-auto mb-5 pb-3">Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit.</p>
+            <p class="lead grey-text text-center w-responsive mx-auto mb-5 pb-3">
+                Hoowa propose à ses clients adhérents de profiter de promotions tout au long de l’année grâce à son réseau de partenaires, mais aussi d'obtenir des cadeaux en bon d'achat.
+                Plus nombreux seront les partenaires et adhérents, plus les avantages seront multiples et variés.
+            </p>
 
             <!-- Grid row -->
             <div class="row mb-lg-0 mb-5">
@@ -342,7 +376,10 @@
                     <!-- Grid row -->
                     <div class="row mb-3">
                         <div class="col-md-1 col-2">
-                            <i class="fas fa-book-open purple-pastel fa-2x"></i>
+                            {{--<i class="fas fa-book-open purple-pastel fa-2x"></i>--}}
+                            {{--<i class="fas fa-map-marker-alt purple-pastel fa-2x"></i>--}}
+                            <i class="far fa-eye purple-pastel fa-2x"></i>
+
                         </div>
                         <div class="col-md-11 col-10">
                             <h5 class="font-weight-bold purple-pastel mb-2">Visibilité</h5>
@@ -354,11 +391,12 @@
                     <!-- Grid row -->
                     <div class="row mb-3">
                         <div class="col-md-1 col-2">
-                            <i class="fas fa-wifi green-pastel fa-2x"></i>
+                            {{--<i class="fas fa-wifi green-pastel fa-2x"></i>--}}
+                            <i class="far fa-smile green-pastel fa-2x"></i>
                         </div>
                         <div class="col-md-11 col-10">
                             <h5 class="font-weight-bold green-pastel mb-2">Sastifait ou Remboursé </h5>
-                            <p class="grey-text">Garantie de remboursement en cas de non respect du partenaire, concernant l’avantage propos.</p>
+                            <p class="grey-text"> Garantie de remboursement en cas de non-respect de l'avantage proposé par les partenaires.</p>
                         </div>
                     </div>
                     <!-- Grid row -->
@@ -366,7 +404,8 @@
                     <!-- Grid row -->
                     <div class="row">
                         <div class="col-md-1 col-2">
-                            <i class="far fa-clock orange-pastel fa-2x"></i>
+                            <i class="fas fa-dollar-sign orange-pastel fa-2x"></i>
+                            {{--<i class="far fa-clock orange-pastel fa-2x"></i>--}}
                         </div>
                         <div class="col-md-11 col-10">
                             <h5 class="font-weight-bold orange-pastel mb-2">Développement économique</h5>
@@ -402,12 +441,17 @@
                     <!-- Grid row -->
                     <div class="row mb-3">
                         <div class="col-md-1 col-2">
-                            <i class="fas fa-gem fa-2x pink-pastel"></i>
+                            {{--<i class="fas fa-gem fa-2x pink-pastel"></i>--}}
+                            <i class="fas fa-hands-helping fa-2x pink-pastel"></i>
                         </div>
                         <div class="col-md-11 col-10">
-                            <h5 class="font-weight-bold pink-pastel mb-2">Développement d'un réseau</h5>
-                            <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing. Reprehenderit maiores nam,
-                                aperiam minima elit assumenda voluptate velit.</p>
+                            <h5 class="font-weight-bold pink-pastel mb-2">Parrainage</h5>
+                            <p class="grey-text">
+                                Parrainage 1 €/ filleul une seule fois .
+                                5 filleuls/mois × 12 mois = 60 € .
+                                Selon votre motivation possibilité de rembourser son abonnement voir plus
+
+                            </p>
                         </div>
                     </div>
                     <!-- Grid row -->
@@ -415,12 +459,24 @@
                     <!-- Grid row -->
                     <div class="row mb-lg-0 mb-5">
                         <div class="col-md-1 col-2">
-                            <i class="fas fa-utensils fa-2x navy-blue-color"></i>
+                            {{--<i class="fas fa-utensils fa-2x navy-blue-color"></i>--}}
+                            <i class="fas fa-file-contract fa-2x navy-blue-color"></i>
                         </div>
                         <div class="col-md-11 col-10">
-                            <h5 class="font-weight-bold navy-blue-color mb-2">Développement d'un réseau</h5>
-                            <p class="grey-text mb-0">Le concept du réseau permet la rencontre entre professionnels de même secteur mais aussi la
-                                rencontre avec de nouvelles relations qui peuvent être utiles aux activités commerciales des uns et des autres (la liste des partenaires étant exhaustive et extrêmement variée (commerces de proximité, voyages, assurances, mécaniciens, juridiques...)).</p>
+                            <h5 class="font-weight-bold navy-blue-color mb-2">Conditions d'adhésions</h5>
+                            <p class="grey-text mb-0">
+                                Un minimum de partenaires par secteur ou ville <br>
+                                Règlement du coût de l'adhésion de 4,99 €/mois ou 59 € l'année.<br>
+                                Ou simplement aimer le concept 😊<br>
+
+                                Pour devenir membre !
+
+                                Envoyez nous votre nom, prénom, votre photo ou photo de votre choix ( pour votre carte de membre virtuel ) et un RIB à Hoowa.contact@gmail.com
+
+
+                                Instagram : Hoowa_eco
+
+                            </p>
                         </div>
                     </div>
                     <!-- Grid row -->
@@ -443,12 +499,12 @@
         <!-- Section: Offer -->
 
         <!-- Section: Articles -->
-        <section id="articles" class="mb-5 pb-5">
+        <section id="deals" class="mb-5 pb-5">
 
             <!-- Section heading -->
             <h2 class="h1-responsive font-weight-bold text-center">Deals</h2>
             <hr class="hr-pink my-3">
-            <p class="lead grey-text text-center w-responsive mx-auto mb-5 pb-3">Des deals offrant de 10 à 90% de réduction sur les restaurants, salles de sport, voyages, le shopping, la beauté, les spas, les cadeaux et bien plus encore..</p>
+            <p class="lead grey-text text-center w-responsive mx-auto mb-5 pb-3">Deals : des avantages pouvant aller de 10 à 50 %, voir plus selon l’impact du concept </p>
 
             <!-- Grid row -->
             <div class="row text-center mb-5">
@@ -734,7 +790,7 @@
                         </div>
 
                         <!-- Send button -->
-                        <button class="btn btn-outline-purple-pastel btn-rounded btn-block z-depth-0 mx-0 my-4 waves-effect" type="submit">Send</button>
+                        <button class="btn btn-outline-purple-pastel btn-rounded btn-block z-depth-0 mx-0 my-4 waves-effect" type="submit">Envoyer</button>
 
                     </form>
                     <!-- Form -->
@@ -762,147 +818,175 @@
 
 </main>
 <!-- Main layout -->
-
 <!-- Footer -->
-<footer class="page-footer font-small  pt-2" style="background-color: #0085e3">
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left mt-5" >
+<footer class="page-footer font-small  pt-4" style="background-color: #0085e3">
 
-        <!-- Grid row -->
-        <div class="row mt-3">
+    <!-- Footer Elements -->
+    <div class="container">
 
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
-
-                <!-- Content -->
-                <h6 class="text-uppercase font-weight-bold">HOOWA</h6>
-                <hr class="primary-color  mb-4 mt-0 d-inline-block mx-auto" style="width: 100px;">
-                <p> Réseau de partenariats entre professionnels, commerçants et adhérents .</p>
-
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4">
-
-                <!-- Links -->
-                <h6 class="text-uppercase font-weight-bold">BON PLANS</h6>
-                <hr class="primary-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>
-                    <a href="#!">Voyages</a>
-                </p>
-                <p>
-                    <a href="#!">Sport</a>
-                </p>
-                <p>
-                    <a href="#!">Médecine</a>
-                </p>
-                <p>
-                    <a href="#!"> Bien-être</a>
-                </p>
-
-
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-
-                <!-- Links -->
-                <h6 class="text-uppercase font-weight-bold">Contact</h6>
-                <hr class="primary-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                {{--<p>--}}
-                {{--<i class="fa  fa-home mr-3"></i> 2 Avenue du Régiment Normandie </p>--}}
-                <p>
-                    <i class="fa fa-envelope mr-3"></i> hoowa@gmail.com</p>
-                <p>
-                    <i class="fa fa-phone mr-3"></i> 01.00.11.22.33</p>
-
-            </div>
-            <!-- Grid column -->
-
-        </div>
-        <!-- Grid row -->
+        <!-- Call to action -->
+        <ul class="list-unstyled list-inline text-center py-2">
+            <li class="list-inline-item">
+                <h5 class="mb-1">Suivez nous</h5>
+            </li>
+            <li class="list-inline-item">
+                <i class="fab fa-instagram fa-3x"></i>
+            </li>
+        </ul>
+        <!-- Call to action -->
 
     </div>
-    <!-- Footer Links -->
-
-    <!-- Root element of PhotoSwipe. Must have class pswp. -->
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-        <!-- Background of PhotoSwipe.
-                     It's a separate element, as animating opacity is faster than rgba(). -->
-        <div class="pswp__bg"></div>
-
-        <!-- Slides wrapper with overflow:hidden. -->
-        <div class="pswp__scroll-wrap">
-
-            <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-            <!-- don't modify these 3 pswp__item elements, data is added later on. -->
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-            <div class="pswp__ui pswp__ui--hidden">
-
-                <div class="pswp__top-bar">
-
-                    <!--  Controls are self-explanatory. Order can be changed. -->
-
-                    <div class="pswp__counter"></div>
-
-                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                    <!--<button class="pswp__button pswp__button--share" title="Share"></button>-->
-
-                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                    <!-- element will get class pswp__preloader--active when preloader is running -->
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--
-                        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                            <div class="pswp__share-tooltip"></div>
-                        </div>
-                           -->
-
-                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                </button>
-
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                </button>
-
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
+    <!-- Footer Elements -->
 
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2019 Copyright:
-        <a href=""> hoowa.fr</a>
+        <a href="https://mdbootstrap.com/education/bootstrap/"> hoowa.fr</a>
     </div>
     <!-- Copyright -->
 
 </footer>
 <!-- Footer -->
+
+{{--<!-- Footer -->--}}
+{{--<footer class="page-footer font-small  pt-2" style="background-color: #0085e3">--}}
+    {{--<!-- Footer Links -->--}}
+    {{--<div class="container text-center text-md-left mt-5" >--}}
+
+        {{--<!-- Grid row -->--}}
+        {{--<div class="row mt-3">--}}
+
+            {{--<!-- Grid column -->--}}
+            {{--<div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">--}}
+
+                {{--<!-- Content -->--}}
+                {{--<h6 class="text-uppercase font-weight-bold">HOOWA</h6>--}}
+                {{--<hr class="primary-color  mb-4 mt-0 d-inline-block mx-auto" style="width: 100px;">--}}
+                {{--<p> Réseau de partenariats entre professionnels, commerçants et adhérents .</p>--}}
+
+            {{--</div>--}}
+            {{--<!-- Grid column -->--}}
+
+            {{--<!-- Grid column -->--}}
+            {{--<div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4">--}}
+
+                {{--<!-- Links -->--}}
+                {{--<h6 class="text-uppercase font-weight-bold">BON PLANS</h6>--}}
+                {{--<hr class="primary-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">--}}
+                {{--<p>--}}
+                    {{--<a href="#!">Voyages</a>--}}
+                {{--</p>--}}
+                {{--<p>--}}
+                    {{--<a href="#!">Sport</a>--}}
+                {{--</p>--}}
+                {{--<p>--}}
+                    {{--<a href="#!">Médecine</a>--}}
+                {{--</p>--}}
+                {{--<p>--}}
+                    {{--<a href="#!"> Bien-être</a>--}}
+                {{--</p>--}}
+
+
+            {{--</div>--}}
+            {{--<!-- Grid column -->--}}
+
+            {{--<!-- Grid column -->--}}
+            {{--<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">--}}
+
+                {{--<!-- Links -->--}}
+                {{--<h6 class="text-uppercase font-weight-bold">Contact</h6>--}}
+                {{--<hr class="primary-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">--}}
+                {{--<p>--}}
+                {{--<i class="fa  fa-home mr-3"></i> 2 Avenue du Régiment Normandie </p>--}}
+                {{--<p>--}}
+                    {{--<i class="fa fa-envelope mr-3"></i> hoowa@gmail.com</p>--}}
+                {{--<p>--}}
+                    {{--<i class="fa fa-phone mr-3"></i> 01.00.11.22.33</p>--}}
+
+            {{--</div>--}}
+            {{--<!-- Grid column -->--}}
+
+        {{--</div>--}}
+        {{--<!-- Grid row -->--}}
+
+    {{--</div>--}}
+    {{--<!-- Footer Links -->--}}
+
+    {{--<!-- Root element of PhotoSwipe. Must have class pswp. -->--}}
+    {{--<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">--}}
+
+        {{--<!-- Background of PhotoSwipe.--}}
+                     {{--It's a separate element, as animating opacity is faster than rgba(). -->--}}
+        {{--<div class="pswp__bg"></div>--}}
+
+        {{--<!-- Slides wrapper with overflow:hidden. -->--}}
+        {{--<div class="pswp__scroll-wrap">--}}
+
+            {{--<!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->--}}
+            {{--<!-- don't modify these 3 pswp__item elements, data is added later on. -->--}}
+            {{--<div class="pswp__container">--}}
+                {{--<div class="pswp__item"></div>--}}
+                {{--<div class="pswp__item"></div>--}}
+                {{--<div class="pswp__item"></div>--}}
+            {{--</div>--}}
+
+            {{--<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->--}}
+            {{--<div class="pswp__ui pswp__ui--hidden">--}}
+
+                {{--<div class="pswp__top-bar">--}}
+
+                    {{--<!--  Controls are self-explanatory. Order can be changed. -->--}}
+
+                    {{--<div class="pswp__counter"></div>--}}
+
+                    {{--<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>--}}
+
+                    {{--<!--<button class="pswp__button pswp__button--share" title="Share"></button>-->--}}
+
+                    {{--<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>--}}
+
+                    {{--<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>--}}
+
+                    {{--<!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->--}}
+                    {{--<!-- element will get class pswp__preloader--active when preloader is running -->--}}
+                    {{--<div class="pswp__preloader">--}}
+                        {{--<div class="pswp__preloader__icn">--}}
+                            {{--<div class="pswp__preloader__cut">--}}
+                                {{--<div class="pswp__preloader__donut"></div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+
+                {{--<!----}}
+                        {{--<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">--}}
+                            {{--<div class="pswp__share-tooltip"></div>--}}
+                        {{--</div>--}}
+                           {{---->--}}
+
+                {{--<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">--}}
+                {{--</button>--}}
+
+                {{--<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">--}}
+                {{--</button>--}}
+
+                {{--<div class="pswp__caption">--}}
+                    {{--<div class="pswp__caption__center"></div>--}}
+                {{--</div>--}}
+
+            {{--</div>--}}
+
+        {{--</div>--}}
+
+    {{--</div>--}}
+
+    {{--<!-- Copyright -->--}}
+    {{--<div class="footer-copyright text-center py-3">© 2019 Copyright:--}}
+        {{--<a href=""> hoowa.fr</a>--}}
+    {{--</div>--}}
+    {{--<!-- Copyright -->--}}
+
+{{--</footer>--}}
+{{--<!-- Footer -->--}}
 
 
 

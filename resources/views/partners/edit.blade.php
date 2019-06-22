@@ -8,7 +8,28 @@
             @method('PATCH')
 
             <h1 class="mb-5"> Editer un Partenaire </h1>
+            @if(count($errors) > 0)
+            <div class="alert alert-danger" role="alert">
+                <ul>
+                    @foreach($errors->all() as $error)
+                        <li> {{$error}}</li>
+                    @endforeach
+                </ul>
 
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            @endif
+            @if($message = Session::get('success'))
+                <div class="alert alert-success" role="alert">
+                    {{$message}}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+            @endif
             <div class="md-form mb-5">
                 <input type="text" id="nom" name="nom" class="form-control" value="{{$partner->nom}}">
                 <label for="nom">nom</label>
@@ -38,38 +59,11 @@
                 <label for="longitude">longitude</label>
             </div>
             <select class="mdb-select md-form mb-5" name="category_id">
-                <option value="{{$partner->category_id}}" disabled selected>Modifier la catégorie</option>
-                <option value="1">Accessoires auto-moto</option>
-                <option value="2">Alimentation</option>
-                <option value="3">Assurance</option>
-                <option value="4">Autres services</option>
-                <option value="5">Bien être</option>
-                <option value="6">Bon plans</option>
-                <option value="7">Boucherie</option>
-                <option value="8">Boulangerie</option>
-                <option value="9">Coach sportif</option>
-                <option value="10">Coiffures</option>
-                <option value="11">Cours</option>
-                <option value="12">Développement individuel</option>
-                <option value="13">Fast-food</option>
-                <option value="14">Finance</option>
-                <option value="15">Formation</option>
-                <option value="16">Jeux</option>
-                <option value="17">Langues</option>
-                <option value="18">Lavage automobiles</option>
-                <option value="19">Mécanique auto-moto</option>
-                <option value="20">Médecine</option>
-                <option value="21">Optique</option>
-                <option value="22">Restaurant</option>
-                <option value="23">Scooters</option>
-                <option value="24">Sport</option>
-                <option value="25">Sport de combats</option>
-                <option value="26">Transports</option>
-                <option value="27">Téléphonie</option>
-                <option value="28">Voitures</option>
-                <option value="29">Voyage</option>
-                <option value="30">Vélos</option>
-                <option value="31">Vêtements</option>
+                <option value="{{$partner->category_id}}"  selected>Modifier la catégorie</option>
+                @foreach($categories as $categorie)
+                    {{ $categorie }}
+                    <option value="{{ $categorie->id }}">{{ $categorie->nom }}</option>
+                @endforeach
             </select>
             <div class="file-field">
                 <div class="btn btn-primary btn-sm float-left">
