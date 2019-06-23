@@ -216,7 +216,7 @@
     <div class="container">
 
         <!-- Section: About Us -->
-        <section id="about" class="mb-5 pb-5">
+        <section id="about">
 
             <!-- Section heading -->
             <h2 class="h1-responsive font-weight-bold text-center">Pourquoi HOOWA</h2>
@@ -243,7 +243,7 @@
             <div class="row mb-5">
 
                 <!-- Grid column -->
-                <div class="col-md-6 mb-md-0 mb-5">
+                <div class="col-md-6 mb-md-0 mb-md-5">
 
                     <!-- Grid row -->
                     <div class="row">
