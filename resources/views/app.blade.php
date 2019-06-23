@@ -94,14 +94,14 @@
                 <div class="col-md-12 py-5">
                     <div class="mb-5 flex-center">
 
-                        <!-- Facebook -->
-                        <a class="fb-ic">
-                            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                        </a>
+                        {{--<!-- Facebook -->--}}
+                        {{--<a class="fb-ic">--}}
+                            {{--<i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>--}}
+                        {{--</a>--}}
                         <!--Instagram-->
-                        <a class="ins-ic">
-                            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                        </a>
+                        {{--<a class="ins-ic">--}}
+                            {{--<i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>--}}
+                        {{--</a>--}}
 
                     </div>
                 </div>
@@ -136,14 +136,14 @@
 
 <script>
     $(document).ready(function () {
-        $('.mdb-select').materialSelect();
+        window.navigator.geolocation.getCurrentPosition(function(position) {
+            $('#demo').attr("href", "/geolocation/"+position.coords.latitude+"/"+position.coords.longitude+"\"");
+        }, function(error) {
+            console.log("Erreur de géoloc N°"+error.code+" : "+error.message);
+            console.log(error);
+        });
 
-            window.navigator.geolocation.getCurrentPosition(function(position) {
-                $('#demo').attr("href", "/geolocation/"+position.coords.latitude+"/"+position.coords.longitude+"\"");
-            }, function(error) {
-                console.log("Erreur de géoloc N°"+error.code+" : "+error.message);
-                console.log(error);
-            });
+        $('.mdb-select').materialSelect();
 
     });
 

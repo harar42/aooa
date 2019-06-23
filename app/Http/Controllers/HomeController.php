@@ -110,8 +110,18 @@ class HomeController extends Controller
             'message' => $request->message,
         );
 
-        Mail::to('ararhaouas@yahoo.fr')->send(new SendMail($data));
+        Mail::to('hoowa.pro@gmail.com')->send(new SendMail($data));
         return back()->with('success','Merci de nous avoir contacté');
+    }
+
+    public function  faq()
+    {
+        return view('faq');
+    }
+
+    public function  cgv()
+    {
+        return view('cgv');
     }
 
 }

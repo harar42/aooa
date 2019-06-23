@@ -18,6 +18,8 @@ Route::POST('/message', 'HomeController@mail')->name('message');
 Auth::routes();
 
 Route::get('/welcome', 'HomeController@index')->name('home');
+Route::get('/faq', 'HomeController@faq')->name('faq');
+Route::get('/cgv-cgu', 'HomeController@cgv')->name('cgv');
 
 Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard')->middleware('isadmin');
 

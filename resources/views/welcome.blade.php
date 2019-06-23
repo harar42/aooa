@@ -819,175 +819,119 @@
 </main>
 <!-- Main layout -->
 <!-- Footer -->
-<footer class="page-footer font-small  pt-4" style="background-color: #0085e3">
+<footer class="page-footer font-small " style="background-color: #0085e3">
 
-    <!-- Footer Elements -->
+    <!-- Footer Links -->
     <div class="container">
 
-        <!-- Call to action -->
-        <ul class="list-unstyled list-inline text-center py-2">
-            <li class="list-inline-item">
-                <h5 class="mb-1">Suivez nous</h5>
-            </li>
-            <li class="list-inline-item">
-                <i class="fab fa-instagram fa-3x"></i>
-            </li>
-        </ul>
-        <!-- Call to action -->
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                    <a href="#about" data-offset="100">
+                        Accueil
+                    </a>
+                </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                    <a href="#avantages">Avantages</a>
+                </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                    <a href="#deals">Deals</a>
+                </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                    <a href="#temoignages">Temoignages</a>
+                </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                    <a href="#contact">Contact</a>
+                </h6>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                    <a href="{{route('faq')}}">FAQ / CGV / CGU</a>
+                </h6>
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+        <hr class="rgba-white-light" style="margin: 0 15%;">
+
+        <!-- Grid row-->
+        <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+
+            <!-- Grid column -->
+            <div class="col-md-8 col-12 mt-5">
+                <p style="line-height: 1.7rem">Hoowa est un concept innovant autour d’une économie solidaire et sociale.
+                    La plateforme Hoowa permet à toute personne physique ou morale commerçante ou non d’accéder à des services divers où chacun trouve un intérêt
+                    Hoowa crée un réseau de partenariats entre commerçants et adhérents à travers sa plateforme qui poursuit plusieurs objectifs.</p>
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+        <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+
+        <!-- Grid row-->
+        <div class="row pb-3">
+
+            <!-- Grid column -->
+            <div class="col-md-12">
+
+                <div class="mb-5 flex-center">
+
+                    <!--Pinterest-->
+                    <a class=" mr-4 text-white font-weight-bold">
+                        SUIVEZ NOUS
+                    </a>
+                    <!--Instagram-->
+                    <a class="ins-ic">
+                        <i class="fab fa-instagram fa-lg white-text "> </i>
+                    </a>
+
+
+                </div>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
 
     </div>
-    <!-- Footer Elements -->
+    <!-- Footer Links -->
 
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2019 Copyright:
-        <a href="https://mdbootstrap.com/education/bootstrap/"> hoowa.fr</a>
+        <a href="https://mdbootstrap.com/education/bootstrap/"> Hoowa.fr</a>
     </div>
     <!-- Copyright -->
 
 </footer>
 <!-- Footer -->
-
-{{--<!-- Footer -->--}}
-{{--<footer class="page-footer font-small  pt-2" style="background-color: #0085e3">--}}
-    {{--<!-- Footer Links -->--}}
-    {{--<div class="container text-center text-md-left mt-5" >--}}
-
-        {{--<!-- Grid row -->--}}
-        {{--<div class="row mt-3">--}}
-
-            {{--<!-- Grid column -->--}}
-            {{--<div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">--}}
-
-                {{--<!-- Content -->--}}
-                {{--<h6 class="text-uppercase font-weight-bold">HOOWA</h6>--}}
-                {{--<hr class="primary-color  mb-4 mt-0 d-inline-block mx-auto" style="width: 100px;">--}}
-                {{--<p> Réseau de partenariats entre professionnels, commerçants et adhérents .</p>--}}
-
-            {{--</div>--}}
-            {{--<!-- Grid column -->--}}
-
-            {{--<!-- Grid column -->--}}
-            {{--<div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4">--}}
-
-                {{--<!-- Links -->--}}
-                {{--<h6 class="text-uppercase font-weight-bold">BON PLANS</h6>--}}
-                {{--<hr class="primary-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">--}}
-                {{--<p>--}}
-                    {{--<a href="#!">Voyages</a>--}}
-                {{--</p>--}}
-                {{--<p>--}}
-                    {{--<a href="#!">Sport</a>--}}
-                {{--</p>--}}
-                {{--<p>--}}
-                    {{--<a href="#!">Médecine</a>--}}
-                {{--</p>--}}
-                {{--<p>--}}
-                    {{--<a href="#!"> Bien-être</a>--}}
-                {{--</p>--}}
-
-
-            {{--</div>--}}
-            {{--<!-- Grid column -->--}}
-
-            {{--<!-- Grid column -->--}}
-            {{--<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">--}}
-
-                {{--<!-- Links -->--}}
-                {{--<h6 class="text-uppercase font-weight-bold">Contact</h6>--}}
-                {{--<hr class="primary-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">--}}
-                {{--<p>--}}
-                {{--<i class="fa  fa-home mr-3"></i> 2 Avenue du Régiment Normandie </p>--}}
-                {{--<p>--}}
-                    {{--<i class="fa fa-envelope mr-3"></i> hoowa@gmail.com</p>--}}
-                {{--<p>--}}
-                    {{--<i class="fa fa-phone mr-3"></i> 01.00.11.22.33</p>--}}
-
-            {{--</div>--}}
-            {{--<!-- Grid column -->--}}
-
-        {{--</div>--}}
-        {{--<!-- Grid row -->--}}
-
-    {{--</div>--}}
-    {{--<!-- Footer Links -->--}}
-
-    {{--<!-- Root element of PhotoSwipe. Must have class pswp. -->--}}
-    {{--<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">--}}
-
-        {{--<!-- Background of PhotoSwipe.--}}
-                     {{--It's a separate element, as animating opacity is faster than rgba(). -->--}}
-        {{--<div class="pswp__bg"></div>--}}
-
-        {{--<!-- Slides wrapper with overflow:hidden. -->--}}
-        {{--<div class="pswp__scroll-wrap">--}}
-
-            {{--<!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->--}}
-            {{--<!-- don't modify these 3 pswp__item elements, data is added later on. -->--}}
-            {{--<div class="pswp__container">--}}
-                {{--<div class="pswp__item"></div>--}}
-                {{--<div class="pswp__item"></div>--}}
-                {{--<div class="pswp__item"></div>--}}
-            {{--</div>--}}
-
-            {{--<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->--}}
-            {{--<div class="pswp__ui pswp__ui--hidden">--}}
-
-                {{--<div class="pswp__top-bar">--}}
-
-                    {{--<!--  Controls are self-explanatory. Order can be changed. -->--}}
-
-                    {{--<div class="pswp__counter"></div>--}}
-
-                    {{--<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>--}}
-
-                    {{--<!--<button class="pswp__button pswp__button--share" title="Share"></button>-->--}}
-
-                    {{--<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>--}}
-
-                    {{--<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>--}}
-
-                    {{--<!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->--}}
-                    {{--<!-- element will get class pswp__preloader--active when preloader is running -->--}}
-                    {{--<div class="pswp__preloader">--}}
-                        {{--<div class="pswp__preloader__icn">--}}
-                            {{--<div class="pswp__preloader__cut">--}}
-                                {{--<div class="pswp__preloader__donut"></div>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-
-                {{--<!----}}
-                        {{--<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">--}}
-                            {{--<div class="pswp__share-tooltip"></div>--}}
-                        {{--</div>--}}
-                           {{---->--}}
-
-                {{--<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">--}}
-                {{--</button>--}}
-
-                {{--<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">--}}
-                {{--</button>--}}
-
-                {{--<div class="pswp__caption">--}}
-                    {{--<div class="pswp__caption__center"></div>--}}
-                {{--</div>--}}
-
-            {{--</div>--}}
-
-        {{--</div>--}}
-
-    {{--</div>--}}
-
-    {{--<!-- Copyright -->--}}
-    {{--<div class="footer-copyright text-center py-3">© 2019 Copyright:--}}
-        {{--<a href=""> hoowa.fr</a>--}}
-    {{--</div>--}}
-    {{--<!-- Copyright -->--}}
-
-{{--</footer>--}}
-{{--<!-- Footer -->--}}
-
 
 
 <!-- /Start your project here-->
