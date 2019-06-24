@@ -191,11 +191,15 @@
                 <!--Footer-->
                 <div class="modal-footer justify-content-center blue-pastel pink-pastel">
                     <span class="mr-4">Présentation Hoowa</span>
-                    <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
-                    <!--Twitter-->
-                    <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
-                    <!--Linkedin-->
-                    <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+                    <!--Pinterest-->
+                    <a class=" mr-4 text-white font-weight-bold">
+                        SUIVEZ NOUS
+                    </a>
+                    <!--Instagram-->
+                    <a class="ins-ic" href="https://www.instagram.com/p/BzDVxUvoh-9/?igshid=wkyz99enm47q" target="_blank">
+                        <i class="fab fa-instagram fa-lg white-text "> </i>
+                    </a>
+
 
                     <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
 
@@ -485,7 +489,7 @@
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-lg-6" style="margin-top: -6rem;">
+                <div class="col-lg-6" >
                     <div class="view">
                         <img src="{{ asset('images/homepage/15252.jpg') }}" class="img-fluid" alt="smaple image">
                     </div>
