@@ -153,9 +153,7 @@ class PartnerController extends Controller
             $location = public_path('images/partners/' . $filename);
             Image::make($image)->resize(400,400)->save($location);
         }
-        else {
-            $filename = $request->get('image');
-        }
+
 
         $partner = Partner::find($id);
         $partner->nom = $request->get('nom');
@@ -165,7 +163,10 @@ class PartnerController extends Controller
         $partner->ville = $request->get('ville');
         $partner->latitude = $request->get('latitude');
         $partner->longitude = $request->get('longitude');
-        $partner->image = $filename;
+        if($filename)
+        {
+            $partner->image = $filename;
+        }
         $partner->category_id = $request->get('category_id');
         $partner->save();
 

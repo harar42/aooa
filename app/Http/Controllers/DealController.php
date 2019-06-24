@@ -142,7 +142,10 @@ class DealController extends Controller
         $partner->ville = $request->get('ville');
         $partner->latitude = $request->get('latitude');
         $partner->longitude = $request->get('longitude');
-        $partner->image =$filename;
+        if($filename)
+        {
+            $partner->image =$filename;
+        }
         $partner->category_id = $request->get('category_id');
         $partner->save();
 
