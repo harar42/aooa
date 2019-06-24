@@ -732,7 +732,7 @@
                 <div class="col-lg-5 mb-lg-0 mb-4">
 
                     {{--<p class="text-center purple-pastel ml-lg-5"><strong>Make an appointment to get the best offer</strong></p>--}}
-                    @if(count($errors) > 0))
+                    @if(count($errors) > 0)
                     <div class="alert alert-danger" role="alert">
                         <ul>
                             @foreach($errors->all() as $error)
@@ -799,7 +799,7 @@
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-lg-7" style="margin-top: -7rem;">
+                <div class="col-lg-7" style="margin-top: -4rem;">
 
                     <div class="view">
                         <img src="https://mdbootstrap.com/img/illustrations/graphics(1).png" class="img-fluid" alt="smaple image">
