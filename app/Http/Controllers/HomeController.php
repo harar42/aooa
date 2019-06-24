@@ -110,6 +110,7 @@ class HomeController extends Controller
             'message' => $request->message,
         );
 
+
         Mail::to('hoowa.pro@gmail.com')->send(new SendMail($data));
         return back()->with('success','Merci de nous avoir contacté');
     }

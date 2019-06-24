@@ -31,6 +31,7 @@ class DealController extends Controller
         return view('deals.index')->with('deals', $deals);
     }
 
+
     /**
      * Show the form for creating a new resource.
      *
