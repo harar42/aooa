@@ -908,7 +908,7 @@
                         SUIVEZ NOUS
                     </a>
                     <!--Instagram-->
-                    <a class="ins-ic">
+                    <a class="ins-ic" href="https://www.instagram.com/p/BzDVxUvoh-9/?igshid=wkyz99enm47q" target="_blank">
                         <i class="fab fa-instagram fa-lg white-text "> </i>
                     </a>
 
