@@ -190,18 +190,14 @@
 
                 <!--Footer-->
                 <div class="modal-footer justify-content-center blue-pastel pink-pastel">
-                    <span class="mr-4">Présentation Hoowa</span>
-                    <!--Pinterest-->
-                    <a class=" mr-4 text-white font-weight-bold">
+                    <span class="mr-4">
                         SUIVEZ NOUS
+                     <a class="ins-ic" href="https://www.instagram.com/p/BzDVxUvoh-9/?igshid=wkyz99enm47q" target="_blank">
+                        <i class="fab fa-instagram fa-lg "> </i>
                     </a>
-                    <!--Instagram-->
-                    <a class="ins-ic" href="https://www.instagram.com/p/BzDVxUvoh-9/?igshid=wkyz99enm47q" target="_blank">
-                        <i class="fab fa-instagram fa-lg white-text "> </i>
-                    </a>
+                    </span>
 
-
-                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md " data-dismiss="modal">Close</button>
 
                 </div>
 
